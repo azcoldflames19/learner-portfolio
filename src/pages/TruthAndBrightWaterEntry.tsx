@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const TruthAndBrightWaterEntry = () => {
   return (
     <div className="prose prose-invert max-w-none">

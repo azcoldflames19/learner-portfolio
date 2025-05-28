@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const BlanketExerciseEntry = () => {
   return (
     <div className="prose prose-invert max-w-none">

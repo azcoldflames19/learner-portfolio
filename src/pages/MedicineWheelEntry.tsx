@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const MedicineWheelEntry = () => {
   const mentalGoals = [
     "I will improve my analysing skills by interpreting complicated pieces.",
