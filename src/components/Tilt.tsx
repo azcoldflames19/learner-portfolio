@@ -12,11 +12,11 @@ const Tilt = ({ children, className = '' }: TiltProps) => {
   useEffect(() => {
     if (tiltRef.current) {
       VanillaTilt.init(tiltRef.current, {
-        max: 15,
-        scale: 1.02,
+        max: 8,
+        scale: 1.01,
         speed: 1000,
         glare: true,
-        'max-glare': 0.2,
+        'max-glare': 0.15,
       });
     }
 
