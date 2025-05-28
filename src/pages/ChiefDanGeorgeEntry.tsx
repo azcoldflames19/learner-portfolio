@@ -17,16 +17,6 @@ const ChiefDanGeorgeEntry = () => {
       <p>
         Chief Dan George used several effective persuasive strategies in his speech. He began by reflecting on the past and comparing it with the hardships faced under colonization. He also used repetition effectively, such as repeating the phrase "When I was a boy" to emphasize the drastic changes over his lifetime. Near the end of his speech, he called for a future based on mutual respect, peace, and understanding.
       </p>
-      <div className="mt-6 p-4 bg-nord1 rounded-lg">
-        <h3 className="text-nord6 font-mono mb-3">Audio Recording</h3>
-        <audio 
-          controls 
-          className="w-full"
-          src="/audio/chief-dan-george.mp3"
-        >
-          Your browser does not support the audio element.
-        </audio>
-      </div>
     </motion.div>
   );
 };
