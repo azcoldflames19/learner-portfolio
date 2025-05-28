@@ -59,6 +59,20 @@ const About = () => (
             </p>
           </motion.div>
         </Tilt>
+
+        <Tilt className="w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="bg-[#3B4252] rounded-lg p-6 shadow-lg font-mono"
+          >
+            <h2 className="text-xl font-semibold mb-4 text-[#ECEFF4]">About This Site</h2>
+            <p className="text-[#D8DEE9]">
+              This portfolio website was built from scratch using Vite + React, featuring a modern tech stack including TypeScript, Tailwind CSS, and Framer Motion for smooth animations. The site is designed to be responsive, accessible, and performant, with a focus on user experience and clean code architecture.
+            </p>
+          </motion.div>
+        </Tilt>
       </div>
     </div>
   </div>
