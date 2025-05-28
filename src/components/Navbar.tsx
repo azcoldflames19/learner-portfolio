@@ -7,15 +7,15 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/entries', label: 'Entries' },
-    { path: '/about', label: 'About' },
+    { path: '/about', label: 'About Me' },
   ];
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-nord1 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-serif text-primary-600">
+            <Link to="/" className="text-xl font-mono text-nord6">
               English Portfolio
             </Link>
           </div>
@@ -25,13 +25,13 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="relative text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                className="relative text-nord4 hover:text-nord6 transition-colors duration-200 font-mono"
               >
                 {item.label}
                 {location.pathname === item.path && (
                   <motion.div
                     layoutId="navbar-indicator"
-                    className="absolute -bottom-[1.5px] left-0 right-0 h-0.5 bg-primary-600"
+                    className="absolute -bottom-[1.5px] left-0 right-0 h-0.5 bg-nord10"
                     initial={false}
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                   />

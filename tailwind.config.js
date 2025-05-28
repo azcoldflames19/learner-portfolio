@@ -4,25 +4,30 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f5f7fa',
-          100: '#ebeef3',
-          200: '#d2dbe5',
-          300: '#b9c7d7',
-          400: '#869fb9',
-          500: '#53779c',
-          600: '#4b6b8c',
-          700: '#3f5a74',
-          800: '#32485d',
-          900: '#293b4b',
-        },
+        // Nord theme
+        nord0: '#2E3440',  // Polar Night
+        nord1: '#3B4252',
+        nord2: '#434C5E',
+        nord3: '#4C566A',
+        nord4: '#D8DEE9',  // Snow Storm
+        nord5: '#E5E9F0',
+        nord6: '#ECEFF4',
+        nord7: '#8FBCBB',  // Frost
+        nord8: '#88C0D0',
+        nord9: '#81A1C1',
+        nord10: '#5E81AC',
+        nord11: '#BF616A', // Aurora
+        nord12: '#D08770',
+        nord13: '#EBCB8B',
+        nord14: '#A3BE8C',
+        nord15: '#B48EAD',
       },
       fontFamily: {
-        serif: ['Merriweather', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
     },
   },

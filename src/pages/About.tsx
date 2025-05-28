@@ -1,45 +1,67 @@
 import { motion } from 'framer-motion';
+import Tilt from '../components/Tilt';
 
-const About = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="max-w-3xl mx-auto"
-    >
-      <h1 className="text-3xl font-serif text-primary-800 mb-8">About My Journey</h1>
-      
-      <section className="space-y-6">
-        <div className="entry-card">
-          <h2 className="text-2xl font-serif text-primary-700 mb-4">My Learning Goals</h2>
-          <p className="text-gray-600">
-            My primary goal is to achieve fluency in English, focusing on both written and spoken communication.
-            Through this portfolio, I document my progress, challenges, and achievements in this journey.
-          </p>
-        </div>
+const About = () => (
+  <div className="min-h-screen bg-[#2E3440] text-[#ECEFF4] p-8">
+    <div className="max-w-4xl mx-auto">
+      <motion.h1 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-4xl font-bold mb-8 text-[#ECEFF4] font-mono"
+      >
+        About Me
+      </motion.h1>
 
-        <div className="entry-card">
-          <h2 className="text-2xl font-serif text-primary-700 mb-4">Learning Methods</h2>
-          <ul className="list-disc list-inside text-gray-600 space-y-2">
-            <li>Regular writing practice through essays and reflections</li>
-            <li>Speaking practice with audio recordings</li>
-            <li>Reading English literature and articles</li>
-            <li>Engaging in conversations with native speakers</li>
-          </ul>
-        </div>
+      <div className="space-y-6">
+        <Tilt className="w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-[#3B4252] rounded-lg p-6 shadow-lg font-mono"
+          >
+            <h2 className="text-xl font-semibold mb-4 text-[#ECEFF4]">My Journey</h2>
+            <p className="text-[#D8DEE9] mb-4">
+              Throughout this course, I've embarked on a journey to understand and appreciate Indigenous perspectives,
+              their rich cultural heritage, and unique storytelling traditions. Each entry in my portfolio represents
+              a step in my exploration of Indigenous voices, history, and contemporary experiences.
+            </p>
+          </motion.div>
+        </Tilt>
 
-        <div className="entry-card">
-          <h2 className="text-2xl font-serif text-primary-700 mb-4">Progress Tracking</h2>
-          <p className="text-gray-600">
-            This portfolio serves as a living document of my English learning journey. Each entry
-            represents a milestone in my progress, from basic writing exercises to more complex
-            compositions and speaking practice.
-          </p>
-        </div>
-      </section>
-    </motion.div>
-  );
-};
+        <Tilt className="w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-[#3B4252] rounded-lg p-6 shadow-lg font-mono"
+          >
+            <h2 className="text-xl font-semibold mb-4 text-[#ECEFF4]">Learning Goals</h2>
+            <p className="text-[#D8DEE9] mb-4">
+              My goal is to develop a deeper understanding of Indigenous cultures and perspectives through
+              literature, art, and personal reflections. I aim to challenge my preconceptions and build
+              meaningful connections with Indigenous knowledge and ways of knowing.
+            </p>
+          </motion.div>
+        </Tilt>
+
+        <Tilt className="w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="bg-[#3B4252] rounded-lg p-6 shadow-lg font-mono"
+          >
+            <h2 className="text-xl font-semibold mb-4 text-[#ECEFF4]">Interests</h2>
+            <p className="text-[#D8DEE9]">
+              I'm particularly interested in Indigenous storytelling traditions, contemporary Indigenous
+              literature, and the ways in which Indigenous perspectives can enrich our understanding of
+              history, culture, and identity.
+            </p>
+          </motion.div>
+        </Tilt>
+      </div>
+    </div>
+  </div>
+);
 
 export default About; 

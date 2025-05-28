@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-white text-gray-900 font-sans;
+  html {
+    min-height: 100%;
   }
+
+  body {
+    @apply text-nord4 min-h-screen relative;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-mono text-nord6;
   }
 }
 
@@ -21,9 +26,9 @@
     @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
   }
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700;
+    @apply bg-nord10 text-nord6 px-4 py-2 rounded-lg hover:bg-nord9 transition-colors duration-200;
   }
   .entry-card {
-    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+    @apply bg-nord1 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
   }
 }
